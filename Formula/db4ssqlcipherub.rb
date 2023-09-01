@@ -6,6 +6,12 @@ class Db4ssqlcipherub < Formula
   head "https://github.com/sqlcipher/sqlcipher.git"
   env :std
 
+  bottle do
+    root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4ssqlcipherub"
+    rebuild 1
+    sha256 cellar: :any, arm64_ventura: "3659d1e7cb95b71e5fce4b82d410926d612f577329b49e7f6685fbf5bd57fb51"
+  end
+
   depends_on arch: :arm64
   depends_on "db4ssqlcipherub-x86_64"
   depends_on "db4sopensslub@3-arm64"

@@ -16,6 +16,12 @@ class Db4sopensslubAT3X8664 < Formula
   keg_only "not intended for general use"
   env :std
 
+  bottle do
+    root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4sopensslub@3-x86_64"
+    rebuild 1
+    sha256 arm64_ventura: "d20406aa63a10d443551f543a98f7df129841cffe9f92357e0cf14bab9aeca53"
+  end
+
   depends_on arch: :arm64
   depends_on "ca-certificates"
   depends_on "db4sopensslub@3-arm64"

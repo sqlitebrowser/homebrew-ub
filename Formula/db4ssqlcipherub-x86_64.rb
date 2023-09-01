@@ -7,6 +7,12 @@ class Db4ssqlcipherubX8664 < Formula
   keg_only "not intended for general use"
   env :std
 
+  bottle do
+    root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4ssqlcipherub-x86_64"
+    rebuild 1
+    sha256 cellar: :any, arm64_ventura: "6fc6a2d1a83b3426fbb81efd784aa5d5b213003bd67ab444bf18bbec1bfbe5bd"
+  end
+
   depends_on arch: :arm64
   depends_on "db4sopensslub@3-x86_64"
 

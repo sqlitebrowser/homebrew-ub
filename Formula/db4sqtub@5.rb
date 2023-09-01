@@ -10,6 +10,12 @@ class Db4sqtubAT5 < Formula
   sha256 "b545cb83c60934adc9a6bbd27e2af79e5013de77d46f5b9f5bb2a3c762bf55ca"
   license all_of: ["GFDL-1.3-only", "GPL-2.0-only", "GPL-3.0-only", "LGPL-2.1-only", "LGPL-3.0-only"]
 
+  bottle do
+    root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4sqtub@5"
+    rebuild 1
+    sha256 cellar: :any, arm64_ventura: "82488d2572579948c239aba406e739f9568027cf061616bcaf665b34641aaf23"
+  end
+
   depends_on arch: :arm64
 
   # Fix build with Xcode 14.3.

@@ -6,6 +6,12 @@ class Db4ssqliteftsubAT5 < Formula
   sha256 "7abcfd161c6e2742ca5c6c0895d1f853c940f203304a0b49da4e1eca5d088ca6"
   env :std
 
+  bottle do
+    root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4ssqliteftsub@5"
+    rebuild 1
+    sha256 cellar: :any, arm64_ventura: "ae24b76f3e835bc3be5f5542d7062b982da9a29a5a9f23b60dfa9147cea68e1e"
+  end
+
   livecheck do
     url :homepage
     regex(%r{href=.*?releaselog/v?(\d+(?:[._]\d+)+)\.html}i)
