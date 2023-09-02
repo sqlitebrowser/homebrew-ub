@@ -1,15 +1,15 @@
 class Db4ssqlcipherub < Formula
   desc "SQLite extension providing 256-bit AES encryption"
   homepage "https://www.zetetic.net/sqlcipher/"
-  url "https://github.com/sqlcipher/sqlcipher/archive/v4.5.4.tar.gz"
-  sha256 "ea052fe634d729f9dd6b624016104de796faf87e487a9e868a07faee35957771"
+  url "https://github.com/sqlcipher/sqlcipher/archive/v4.5.5.tar.gz"
+  sha256 "014ef9d4f5b5f4e7af4d93ad399667947bb55e31860e671f0def1b8ae6f05de0"
   head "https://github.com/sqlcipher/sqlcipher.git"
   env :std
 
   bottle do
     root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4ssqlcipherub"
     rebuild 1
-    sha256 cellar: :any, arm64_ventura: "3659d1e7cb95b71e5fce4b82d410926d612f577329b49e7f6685fbf5bd57fb51"
+    sha256 cellar: :any, arm64_ventura: "3f8a5f6c9f96faff86685cb959980567d4fc9cae9a792b552fabca37c36cfb96"
   end
 
   depends_on arch: :arm64
