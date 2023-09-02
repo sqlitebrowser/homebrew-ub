@@ -1,15 +1,15 @@
 class Db4ssqliteftsubAT5 < Formula
   desc "Command-line interface for SQLite"
   homepage "https://sqlite.org"
-  url "https://sqlite.org/2023/sqlite-autoconf-3420000.tar.gz"
-  version "3.42.0"
-  sha256 "7abcfd161c6e2742ca5c6c0895d1f853c940f203304a0b49da4e1eca5d088ca6"
+  url "https://sqlite.org/2023/sqlite-autoconf-3430000.tar.gz"
+  version "3.43.0"
+  sha256 "49008dbf3afc04d4edc8ecfc34e4ead196973034293c997adad2f63f01762ae1"
   env :std
 
   bottle do
     root_url "https://nightlies.sqlitebrowser.org/homebrew_bottles/homebrew-ub/db4ssqliteftsub@5"
     rebuild 1
-    sha256 cellar: :any, arm64_ventura: "ae24b76f3e835bc3be5f5542d7062b982da9a29a5a9f23b60dfa9147cea68e1e"
+    sha256 cellar: :any, arm64_ventura: "2d002807a7b13f1ba76adbfb85fd70e616d26cb15fbde2715513159ce501001a"
   end
 
   livecheck do
